@@ -14,6 +14,14 @@ type Student = {
     print: () => void;               
 };
 
+type Person = {
+    f_name: string;
+    l_name: string;
+    age: number;
+    role: TechRoles;
+    print(): void;
+}
+
 const student1: Student = {
     id: 4,
     name: "Hannah Lorainne",
@@ -29,4 +37,19 @@ const student1: Student = {
     },
 };
 
+const person1: Person = {
+    f_name: "Ivan",
+    l_name: "Delumen",
+    age: 20,
+    role: TechRoles.NETWORK_ENGINEER,
+    print(): void {
+        console.log(`
+            First Name: ${this.f_name} 
+            Last Name ${this.l_name} 
+            Age ${this.age} 
+            Role ${this.role}`);
+    }
+}
+
 student1.print();
+person1.print();
