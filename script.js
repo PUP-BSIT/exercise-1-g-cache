@@ -1,10 +1,10 @@
 var TechRoles;
 (function (TechRoles) {
-    TechRoles[TechRoles["SOFTWARE_ENGINEER"] = 0] = "SOFTWARE_ENGINEER";
-    TechRoles[TechRoles["CLOUD_ENGINEER"] = 1] = "CLOUD_ENGINEER";
-    TechRoles[TechRoles["WEB_DEVELOPER"] = 2] = "WEB_DEVELOPER";
-    TechRoles[TechRoles["DATA_ANALYST"] = 3] = "DATA_ANALYST";
-    TechRoles[TechRoles["NETWORK_ENGINEER"] = 4] = "NETWORK_ENGINEER";
+    TechRoles["SOFTWARE_DEVELOPER"] = "Software Developer";
+    TechRoles["CLOUD_ENGINEER"] = "Cloud Engineer";
+    TechRoles["WEB_DEVELOPER"] = "Web Developer";
+    TechRoles["DATA_ANALYST"] = "Data Analyst";
+    TechRoles["NETWORK_ENGINEER"] = "Network Engineer";
 })(TechRoles || (TechRoles = {}));
 var student1 = {
     id: 4,
@@ -13,7 +13,7 @@ var student1 = {
     programmingLanguages: ["C++", "COBOL"],
     print: function () {
         var _a;
-        console.log("\n        ID: ".concat(student1.id, "\n        Name: ").concat(student1.name, "\n        Role: ").concat(TechRoles[student1.role], "\n        Languages: ").concat((_a = student1.programmingLanguages) === null || _a === void 0 ? void 0 : _a.join(", "), "\n        "));
+        console.log("\n        ID: ".concat(this.id, "\n        Name: ").concat(this.name, "\n        Role: ").concat(this.role, "\n        Languages: ").concat((_a = this.programmingLanguages) === null || _a === void 0 ? void 0 : _a.join(", "), "\n        "));
     },
 };
 var person1 = {
