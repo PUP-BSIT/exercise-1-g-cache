@@ -14,14 +14,6 @@ type Student = {
     print (): void;               
 };
 
-type Person = {
-    f_name: string;
-    l_name: string;
-    age: number;
-    role: TechRoles;
-    print(): void;
-}
-
 const student1: Student = {
     id: 4,
     name: "Hannah Lorainne",
@@ -37,19 +29,20 @@ const student1: Student = {
     },
 };
 
-const person1: Person = {
-    f_name: "Ivan",
-    l_name: "Delumen",
-    age: 20,
+const student2: Student = {
+    id: 2004,
+    name: "Ivan Delumen",
     role: TechRoles.NETWORK_ENGINEER,
+    programmingLanguages: ["Python", "C#", "Ruby"],
     print(): void {
         console.log(`
-            First Name: ${this.f_name} 
-            Last Name ${this.l_name} 
-            Age ${this.age} 
-            Role ${this.role}`);
+        ID: ${this.id}
+        Name: ${this.name}
+        Role: ${this.role}
+        Languages: ${this.programmingLanguages?.join(", ")}
+        `);
     }
 }
 
 student1.print();
-person1.print();
+student2.print();
