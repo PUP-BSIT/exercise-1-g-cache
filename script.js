@@ -16,14 +16,15 @@ var student1 = {
         console.log("\n        ID: ".concat(this.id, "\n        Name: ").concat(this.name, "\n        Role: ").concat(this.role, "\n        Languages: ").concat((_a = this.programmingLanguages) === null || _a === void 0 ? void 0 : _a.join(", "), "\n        "));
     },
 };
-var person1 = {
-    f_name: "Ivan",
-    l_name: "Delumen",
-    age: 20,
+var student2 = {
+    id: 2004,
+    name: "Ivan Delumen",
     role: TechRoles.NETWORK_ENGINEER,
+    programmingLanguages: ["Python", "C#", "Ruby"],
     print: function () {
-        console.log("\n            First Name: ".concat(this.f_name, " \n            Last Name ").concat(this.l_name, " \n            Age ").concat(this.age, " \n            Role ").concat(this.role));
+        var _a;
+        console.log("\n        ID: ".concat(this.id, "\n        Name: ").concat(this.name, "\n        Role: ").concat(this.role, "\n        Languages: ").concat((_a = this.programmingLanguages) === null || _a === void 0 ? void 0 : _a.join(", "), "\n        "));
     }
 };
 student1.print();
-person1.print();
+student2.print();
