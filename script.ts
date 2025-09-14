@@ -1,9 +1,9 @@
 enum TechRoles {
-    SOFTWARE_ENGINEER,
-    CLOUD_ENGINEER,
-    WEB_DEVELOPER,
-    DATA_ANALYST,
-    NETWORK_ENGINEER
+    SOFTWARE_DEVELOPER = "Software Developer",
+    CLOUD_ENGINEER = "Cloud Engineer",
+    WEB_DEVELOPER = "Web Developer",
+    DATA_ANALYST = "Data Analyst",
+    NETWORK_ENGINEER = "Network Engineer"
 }
 
 type Student = {
