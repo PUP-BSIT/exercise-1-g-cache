@@ -4,7 +4,7 @@ enum TechRoles {
     WEB_DEVELOPER = "Web Developer",
     DATA_ANALYST = "Data Analyst",
     NETWORK_ENGINEER = "Network Engineer"
-}
+};
 
 type Student = {
     id: number;
@@ -42,7 +42,23 @@ const student2: Student = {
         Languages: ${this.programmingLanguages?.join(", ")}
         `);
     }
-}
+};
+
+const student3: Student = {
+    id: 495,
+    name: "Daniel",
+    role: TechRoles.WEB_DEVELOPER,
+    programmingLanguages: ["C++", "Java", "PHP", "Dart", "Python"],
+    print(): void {
+    console.log(`
+        ID: ${this.id}
+        Name: ${this.name}
+        Role: ${this.role}
+        Languages: ${this.programmingLanguages?.join(", ")}
+        `);
+    }
+};
 
 student1.print();
 student2.print();
+student3.print();
