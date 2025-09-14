@@ -31,7 +31,7 @@ const student1: Student = {
         console.log(`
         ID: ${this.id}
         Name: ${this.name}
-        Role: ${TechRoles[this.role]}
+        Role: ${this.role}
         Languages: ${this.programmingLanguages?.join(", ")}
         `);
     },
