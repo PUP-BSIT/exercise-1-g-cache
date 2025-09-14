@@ -26,5 +26,16 @@ var student2 = {
         console.log("\n        ID: ".concat(this.id, "\n        Name: ").concat(this.name, "\n        Role: ").concat(this.role, "\n        Languages: ").concat((_a = this.programmingLanguages) === null || _a === void 0 ? void 0 : _a.join(", "), "\n        "));
     }
 };
+var student3 = {
+    id: 495,
+    name: "Daniel",
+    role: TechRoles.WEB_DEVELOPER,
+    programmingLanguages: ["C++", "Java", "PHP", "Dart", "Python"],
+    print: function () {
+        var _a;
+        console.log("\n        ID: ".concat(this.id, "\n        Name: ").concat(this.name, "\n        Role: ").concat(this.role, "\n        Languages: ").concat((_a = this.programmingLanguages) === null || _a === void 0 ? void 0 : _a.join(", "), "\n        "));
+    }
+};
 student1.print();
 student2.print();
+student3.print();
