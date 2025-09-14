@@ -6,6 +6,7 @@ var TechRoles;
     TechRoles["DATA_ANALYST"] = "Data Analyst";
     TechRoles["NETWORK_ENGINEER"] = "Network Engineer";
 })(TechRoles || (TechRoles = {}));
+;
 var student1 = {
     id: 4,
     name: "Hannah Lorainne",
