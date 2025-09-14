@@ -59,6 +59,21 @@ const student3: Student = {
     }
 };
 
+const student4: Student = {
+    id: 1117,
+    name: "Simone",
+    role: TechRoles.CLOUD_ENGINEER,
+    programmingLanguages: ["Go", "JavaScript", "TypeScript"],
+    print(): void { 
+        console.log(`
+        ID: ${this.id}
+        Name: ${this.name}
+        Role: ${this.role}
+        Languages: ${this.programmingLanguages?.join(", ")}
+        `);
+    }
+}
 student1.print();
 student2.print();
 student3.print();
+student4.print();
