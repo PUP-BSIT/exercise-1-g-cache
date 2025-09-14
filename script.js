@@ -22,7 +22,7 @@ var person1 = {
     age: 20,
     role: TechRoles.NETWORK_ENGINEER,
     print: function () {
-        console.log("\n            First Name: ".concat(this.f_name, " \n            Last Name ").concat(this.l_name, " \n            Age ").concat(this.age, " \n            Role ").concat(TechRoles[this.role]));
+        console.log("\n            First Name: ".concat(this.f_name, " \n            Last Name ").concat(this.l_name, " \n            Age ").concat(this.age, " \n            Role ").concat(this.role));
     }
 };
 student1.print();

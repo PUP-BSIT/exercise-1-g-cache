@@ -47,7 +47,7 @@ const person1: Person = {
             First Name: ${this.f_name} 
             Last Name ${this.l_name} 
             Age ${this.age} 
-            Role ${TechRoles[this.role]}`);
+            Role ${this.role}`);
     }
 }
 
