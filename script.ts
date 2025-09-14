@@ -72,8 +72,25 @@ const student4: Student = {
         Languages: ${this.programmingLanguages?.join(", ")}
         `);
     }
-}
+};
+
+const student5: Student = {
+    id: 1026,
+    name: "Gerald",
+    role: TechRoles.SOFTWARE_DEVELOPER,
+    programmingLanguages: ["C++", "JavaScript", "Python"],
+    print(): void { 
+        console.log(`
+        ID: ${this.id}
+        Name: ${this.name}
+        Role: ${this.role}
+        Languages: ${this.programmingLanguages?.join(", ")}
+        `);
+    }
+};
+
 student1.print();
 student2.print();
 student3.print();
 student4.print();
+student5.print();
