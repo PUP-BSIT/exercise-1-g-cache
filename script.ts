@@ -11,7 +11,7 @@ type Student = {
     name: string;
     role: TechRoles;               
     programmingLanguages?: string[]; 
-    print: () => void;               
+    print (): void;               
 };
 
 const student1: Student = {
@@ -19,12 +19,12 @@ const student1: Student = {
     name: "Hannah Lorainne",
     role: TechRoles.DATA_ANALYST,
     programmingLanguages: ["C++", "COBOL"],
-    print: (): void => {
+    print (): void {
         console.log(`
-        ID: ${student1.id}
-        Name: ${student1.name}
-        Role: ${TechRoles[student1.role]}
-        Languages: ${student1.programmingLanguages?.join(", ")}
+        ID: ${this.id}
+        Name: ${this.name}
+        Role: ${TechRoles[this.role]}
+        Languages: ${this.programmingLanguages?.join(", ")}
         `);
     },
 };
