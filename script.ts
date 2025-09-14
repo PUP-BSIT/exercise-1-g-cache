@@ -6,3 +6,10 @@ enum TechRoles {
     NETWORK_ENGINEER
 }
 
+type Student = {
+    id: number;
+    name: string;
+    role: TechRoles;               
+    programmingLanguages?: string[]; 
+    print: () => void;               
+};
